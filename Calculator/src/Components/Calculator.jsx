@@ -3,12 +3,12 @@ import style from '../Components/Calculator.module.scss'
 
 export function Calculator() {
     const [result, setResult] = useState(0)
-    const [valueOne, setValueOne] = useState(0)
+    const [valueOne, setValueOne] = useState("")
     const [valueTwo, setValueTwo] = useState(0)
 
 
     const btnValues = [
-        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
     ]
 
     btnValues.flat().map((btn, i) => {
